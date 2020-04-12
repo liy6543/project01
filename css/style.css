@@ -1,0 +1,87 @@
+    hr{
+        width: 100%;
+        height: 2px;
+        align-self: center;
+        background-color: white;
+        border: 0;
+        }
+    .imageList img{
+        height: 90%;
+    }
+    .imageList ul{
+                 list-style: none;
+                 animation: move 10s linear infinite;
+                 width:600%;
+                 height: 100%;
+             }
+    .imageList li{
+                 float: left;
+                 height: 100%;
+             }
+    .imageList{
+        height:600px;
+        margin:100px auto;
+        border: 2px solid white;
+        overflow: hidden;
+    }
+    @keyframes move{
+                 from{
+                     transform: translateX(0);
+                 }
+                 to{
+                    transform: translateX(-2300px);
+                }
+             }
+    .style{
+        display: flex;
+        flex-direction: row;
+        width:1250px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        height:400px;
+        color:#ffb6c1;
+    }
+    .image{
+        width: 375px;
+        display: flex;
+        justify-content: center;
+    }
+    .image img{
+        width:80%;
+    }
+    .content{
+        font-size: large;
+        width:80%;
+        text-align:left;
+    }
+    .content strong{
+        color: rgba(255, 105, 180, 0.801);
+    }
+    .content a{
+        color:rgb(233, 111, 186);
+    }
+    @media all and (max-width: 600px){
+        .imageList{
+            height:300px;
+            margin:20px auto;
+            border: 2px solid white;
+            overflow: hidden;
+        }
+        @keyframes move{
+            from{
+                transform: translateX(0);
+            }
+            to{
+               transform: translateX(-1500px);
+           }
+        }
+        .style{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width:100%;
+            height: auto;
+            margin-top: 50px;
+            color:#ffb6c1;
+        }
+    }

@@ -1,0 +1,11 @@
+.shopping img{
+    width: 100%;
+    justify-content: center;
+}
+.shopping hr{
+    width: 100%;
+    height: 2px;
+    align-self: center;
+    background-color: white;
+    border: 0;
+}
